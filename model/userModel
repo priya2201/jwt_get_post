@@ -1,0 +1,44 @@
+const Sequelize = require('sequelize');
+const { DataTypes } = require('Sequelize');
+const sequelize = new Sequelize('sequelize_video', 'root', 'rootpassword', {
+    dialect: 'mysql'
+});
+let User1 = sequelize.define('user1', {
+    name: {
+        type: DataTypes.STRING
+    },
+    email: {
+        type: DataTypes.STRING,
+        validate: {
+            isEmail: true
+        }
+    },
+    password: {
+        type: DataTypes.STRING
+    }
+
+}, {
+    validate: true,
+    timestamps: false
+});
+User1.sync({ alter: true }).then(() => {
+    console.log("User model created successfully")
+    // return User1.create({
+    //     name:'ram',
+    //     email:'ram12@gmail.com',
+    //     password:'ramseeta'
+    // })
+    // return sequelize.query(`update user1s set email='krishna@gmail.com'  where id=2` ,{
+    //     type:Sequelize.QueryTypes.update
+    // })
+    // return sequelize.query(`update user1s set password='makhanchor' where id=2` ,{
+    //     type:Sequelize.QueryTypes.update
+    // })
+    return sequelize.query(`update user1s set password='krishna12'  where id=2` ,{
+        type:Sequelize.QueryTypes.update
+    })
+}).catch((err) => {
+    console.log(err)
+});
+
+module.exports = User1;
