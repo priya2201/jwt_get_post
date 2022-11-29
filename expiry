@@ -1,0 +1,26 @@
+const jwt =require('jsonwebtoken');
+// const token=jwt.sign({
+//     exp:Math.floor(Date.now()/1000 ) + (10 * 60),
+//     data:'Token Data'
+// },'secretkey');
+// const token=jwt.sign({
+//     data:'Token Data'
+// },'secretkey',{
+//     expiresIn:'10m'
+// });
+const token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiVG9rZW4gRGF0YSIsImlhdCI6MTY2OTQ0NzEwMiwiZXhwIjoxNjY5NDQ3NzAyfQ.U6xyI8s6QCOF4YGQ-TkWWqHc6p4Co6d8Dxntb9-VH3k"
+const date=new Date();
+jwt.verify(token,'secretkey',function(err,decoded){
+    if (err) {
+        console.log(`${date.getHours()}:${date.getMinutes()}
+                                       :${date.getSeconds()}`);
+        console.log(err);
+    }
+    else {
+        console.log(`${date.getHours()}:${date.getMinutes()}
+                                       :${date.getSeconds()}`);
+        console.log("Token verifified successfully");
+    }   
+});
+console.log(`Token Generated at :- ${date.getHours()}:${date.getMinutes()} :${date.getSeconds()}`);
+console.log(token);

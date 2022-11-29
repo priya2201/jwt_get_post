@@ -1,0 +1,50 @@
+[
+  {
+    "email": "siya@gmail.com",
+    "name": "Tarak mehta",
+    "phone number": "7988563322",
+    "Date of Birth": "2001-01-22"
+  },
+  {
+    "email": "ram@gmail.com",
+    "name": "ram mehta",
+    "phone number": "7988564422",
+    "Date of Birth": "2003-01-24"
+  },
+  {
+    "email": "test@nimapinfotech.com",
+    "name": "vinit",
+    "phone number": "9988676543",
+    "Date of Birth": "2022-12-09"
+  },
+  {
+    "email": "test@nimapinfotech.com",
+    "name": "priya murpani",
+    "phone number": "998867654",
+    "Date of Birth": "2022-12-10"
+  },
+  {
+    "email": "test@nimapinfotech.com",
+    "name": "vinit",
+    "phone number": "9988676543",
+    "Date of Birth": "2022-11-25"
+  },
+  {
+    "email": "",
+    "name": "vinit",
+    "phone number": "9988676543",
+    "Date of Birth": "2022-11-25"
+  },
+  {
+    "email": "alex@gmail.com",
+    "name": "siya",
+    "phone number": "9988676548",
+    "Date of Birth": "2022-11-09"
+  },
+  {
+    "email": "priyamurpani99@gmail.com",
+    "name": "siya",
+    "phone number": "998867654",
+    "Date of Birth": "2022-12-02"
+  }
+]
